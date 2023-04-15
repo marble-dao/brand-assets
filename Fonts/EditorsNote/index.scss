@@ -1,0 +1,51 @@
+$InterPath: './font' !default;
+$InterVersion: '3.19' !default;
+
+@mixin fontdef($FontType: 'Regular') {
+  src: url("#{$InterPath}/Editor'sNote-#{$FontType}.ttf?v=#{$InterVersion}")
+      format('opentype'),
+    url("#{$InterPath}/Editor'sNote-#{$FontType}.ttf?v=#{$InterVersion}")
+      format('opentype');
+}
+
+@font-face {
+  font-family: "Editor's Note";
+  @include fontdef('Bold');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editor's Note";
+  @include fontdef('Semibold');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editor's Note";
+  @include fontdef('Regular');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editor's Note";
+  @include fontdef('Light');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editor's Note";
+  @include fontdef('Italic');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Editor's Note";
+  @include fontdef('Medium');
+  font-weight: 500;
+  font-style: normal;
+}
